@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: rgb(29, 0, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+body .github{
+    display: flex;
+    border: none;
+    background: none;
+    position: absolute;
+    z-index: 0;
+    font-size: 2vh;
+    top: 88.5vh;
+    opacity: 0.3;
+    transition: .5s ease;
+    cursor: pointer;
+}
+body .h1marca{
+    display: flex;
+    border: none;
+    background: none;
+    position: absolute;
+    z-index: 0;
+    font-size: 5vh;
+    top: 90vh;
+    opacity: 0.3;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.h1marca:hover,
+.github:hover{
+    opacity: 1;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: rgb(51, 11, 78);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+/* IMC Form */
+
+#calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.5vh;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #ccc;
+}
+
+.form-control input {
+    padding: 1rem 0.5rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    outline:none;
+    transition: .5s ease;
+}
+.form-control input:focus{
+    border-bottom: 3px solid rgb(167, 0, 0);
+}
+
+.action-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    background-color: rgb(225, 134, 255);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    flex: 1;
+    transition: .5s ease;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#clear-btn {
+    background-color: #444;
+}
+
+/* tabela */
+#result-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+#result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+}
+
+#imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.table-header,
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #444;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3){
+    max-width: 80px;
+}
+
+#back-btn{
+    align-self: center;
+}
+
+.good{
+    color: rgb(40, 165, 104);
+}
+
+.low{
+    color: rgb(238, 223, 89);
+}
+.medium{
+    color: rgb(194, 71, 10);
+}
+.high{
+    color: rgb(165, 40, 40);
+}
