@@ -89,6 +89,7 @@ body .h1marca{
     border-bottom: 1px solid white;
     outline:none;
     transition: .5s ease;
+    color: #fff;
 }
 .form-control input:focus{
     border-bottom: 3px solid rgb(167, 0, 0);
